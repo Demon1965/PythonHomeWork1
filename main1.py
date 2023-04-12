@@ -60,7 +60,7 @@ else:
 3 2 4 -> yes
 3 2 1 -> no """
 
-n = int(input("Please, input number of chocolate's row N: "))       # n1 - это полоска в один ряд и m колонок, разломов будет n-1. n1 += 1  Это полоска в два ряда и m колонок
+""" n = int(input("Please, input number of chocolate's row N: "))       # n1 - это полоска в один ряд и m колонок, разломов будет n-1. n1 += 1  Это полоска в два ряда и m колонок
 m = int(input("Please, input number of chocolate's column M: "))    # m1 - это полоска в одну колонку и n рядов, разломов будет m-1. m1 += 1  Это полоска в две колонки и n рядов
 k = int(input("Please, input the quantity of segments K: "))
 i = j = z = 1
@@ -82,4 +82,4 @@ while j < m:
     else:
         j += 1
 if z == 1:   
-    print("Sorry, you were left without chocolate! ")
+    print("Sorry, you were left without chocolate! ") """
