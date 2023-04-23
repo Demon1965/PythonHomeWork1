@@ -32,34 +32,13 @@ print(set_new) """
 
 import random
 n = int(input("Please, insert the quantity of blueberry bushes: "))
-list = [random.randint(80, 100) for i in range(n)]
-print(list)
-sum = max = i = 0
-while i + 2 < n:
-    sum = list[i] + list[i + 1] + list[i + 2]
-    print(sum, i, max)
-    if sum >= max:
-        max = sum
-        i = i + 1
-        sum = 0
-    else:
-        i = i + 1
-        sum = 0
-else:
-    k = 3
-    while k > 0:
-        sum = list[n-k] + list[n - (k - 1)] + list[i - (k + 1)]
-        print(sum, i, max)
-        if sum >= max:
-            max = sum
-            i = i + 1
-            k = k - 1
-            sum = 0
-        else:
-            i = i + 1
-            k = k - 1
-            sum = 0
-print(max)
+bush = [random.randint(80, 100) for i in range(n)]
+print(bush)
+sum = list()
+for i in range(len(bush)-1):
+    sum.append(bush[i-1] + bush[i] + bush[i + 1])
+sum.append(bush[-2] + bush[-1] + bush[0])    
+print(max(sum))
 
 
 """ Задача №33. Хакер Василий получил доступ к классному журналу и хочет заменить все свои минимальные оценки на
