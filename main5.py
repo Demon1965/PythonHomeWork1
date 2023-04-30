@@ -49,7 +49,10 @@ latin_set = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 res = new_set.difference(latin_set)
 if len(res) == 0: 
     print("Inserted symbols are right! Forward!")
-    print(*counting(new_list))
+    print(counting(new_list))
 else:
     print("Sorry, you are was wrong! Try again...")
+
+
+
 
