@@ -25,23 +25,23 @@
 # with open('example.txt', 'r', encoding='utf-8') as file:
 #     text = file.readlines()
 #     print(text)
-
+""" 
 with open('example.txt', 'w', encoding='utf-8') as file:
     some_list = ['hello', 'world', 'how', 'are', 'you']
     for el in some_list:
-        file.write(el + '\n')
+        file.write(el + '\n') """
         
         
 """ Пользователь вводит кол-во строк, затем сами строки. Нужно записать в новый текстовый файл все эти строки
 Далее пользователь вводит символ, нужно найти кол-во этого символа в новом файле. """
 
 with open('test.txt', 'w') as test:    
-n = int(input()) 
-for i in range(n):        
-    test.write(input() + '\n')
-simbol = input()
-with open('test.txt', 'r') as test1:    
-data = test1.readline()    
+    n = int(input()) 
+    for i in range(n):        
+        test.write(input() + '\n')
+    simbol = input()
+    with open('test.txt', 'r') as test1:    
+        data = test1.readline()    
 
 # print(data)    
 # sum = 0    
